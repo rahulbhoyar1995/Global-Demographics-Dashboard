@@ -1,0 +1,8 @@
+services:
+  plotly-app:
+    build: .
+    ports:
+      - "8050:8050"
+    volumes:
+      - ./app:/app  # This enables live code changes
+    restart: always
